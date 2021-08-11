@@ -1,28 +1,29 @@
 # 全局
-theme_color: '#5e72e4' #主题色
+theme_color: '#ff90bd' #主题色
 show_customize_theme_color_picker: true #允许用户自定义主题色
-darkmode_autoswitch: false #自动切换夜间模式，可选: false 默认使用日间, alwayson 默认使用夜间, system 跟随系统, time 随时间切换
+darkmode_autoswitch: system #自动切换夜间模式，可选: false 默认使用日间, alwayson 默认使用夜间, system 跟随系统, time 随时间切换
 enable_amoled_dark: false #夜间模式样式，false 为灰黑，true 则为暗黑
-card_radius: 4 #默认卡片圆角大小
-card_shadow: #默认卡片阴影大小，可选 small 和 big
+card_radius: 14 #默认卡片圆角大小
+card_shadow: small #默认卡片阴影大小，可选 small 和 big
 font: sans-serif #默认字体，可选: sans-serif 无衬线字体, serif 衬线字体
-enable_headroom: false #滚动时是否自动折叠顶栏
+enable_headroom: true #滚动时是否自动折叠顶栏
 
 
 #顶栏
 toolbar_icon: '' #顶栏图标图片地址，留空则不显示
 toolbar_icon_link: '' #顶栏图标链接，点击时跳转
-toolbar_title: '' # 顶栏标题，留空则跟随博客标题
+toolbar_title: '酸酸のBlog' # 顶栏标题，留空则跟随博客标题
 toolbar_menu: #顶栏菜单，支持二级菜单
   首页: /home
-  二级菜单:
-    归档: /archives
+  归档: /archives
+#  二级菜单:
+#    归档: /archives
 
 #Banner
 banner_title: '' #Banner 标题，留空则跟随博客标题
-enable_banner_title_typing_effect: false #是否启用 Banner 打字效果
-theme.banner_typing_effect_interval: 100 #Banner 打字间隔时长，单位 ms/字
-banner_subtitle: '' #Banner 子标题，留空则不显示
+enable_banner_title_typing_effect: true #是否启用 Banner 打字效果
+theme.banner_typing_effect_interval: 144 #Banner 打字间隔时长，单位 ms/字
+banner_subtitle: 'I hide the rose behind me and always look forward to meeting you.' #Banner 子标题，留空则不显示
 banner_background_url: '/assets/img/banner.jpg' #Banner 背景图，留空则不显示
 banner_background_hide_shapes: false #是否隐藏 Banner 背景圆形
 banner_background_color_type: 'shape-primary' #Banner 渐变样式，Banner 背景图会覆盖该选项，可选值: shape-primary, shape-default, shape-dark, bg-gradient-success, bg-gradient-info, bg-gradient-warning, bg-gradient-danger
@@ -40,29 +41,29 @@ leftbar_menu: #侧栏顶部菜单，支持无限层级菜单嵌套
 sidebar_auther_image: '/assets/img/auther.jpg' #侧栏作者头像
 sidebar_auther_name: '' #侧栏作者名，留空则跟随博客名
 leftbar_author_links: #侧栏作者链接列表
-  aaa: /
-  bbb: /
-  ccc: /
+#  aaa: /
+#  bbb: /
+#  ccc: /
 leftbar_friend_links: #侧栏友链列表
-  aaa: /
-  bbb: /
-  ccc: /
+#  aaa: /
+#  bbb: /
+#  ccc: /
 show_headindex_number: false #侧栏文章目录是否显示章节编号
 
 #文章
 excerpt: true #是否显示文章摘要，为 false 则显示全文
 first_image_as_thumbnail: false #自动取文章第一张图为特色图片
 article_meta: time|categories|read|words|readingtime #文章 Meta 信息列表，用竖线分隔开，可选: time 发布时间, edittime 编辑时间, categories 分类, read 阅读量，words 字数, readingtime 预计阅读时间
-reading_speed_cn: 300 #每分钟中文阅读字数，用于计算预计阅读时间
-reading_speed_en: 160 #每分钟英文阅读单词数，用于计算预计阅读时间
+reading_speed_cn: 288 #每分钟中文阅读字数，用于计算预计阅读时间
+reading_speed_en: 144 #每分钟英文阅读单词数，用于计算预计阅读时间
 donate_qrcode_url: '' #赞赏二维码地址，留空则不显示
 additional_content_after_post: '' #文末追加信息，支持 HTML，留空则不显示
 article_header_style: default #文章内小标题样式，可选值: default, 1, 2
 
 
 #背景
-page_background_url: '/assets/img/banner.jpg' #页面背景地址，留空则不设页面背景
-page_background_dark_url: '/assets/img/banner.jpg' #夜间模式页面背景地址，留空则跟随日间模式
+page_background_url: 'https://roscid.top:414/2021/08/bg_light_compressed.jpg' #页面背景地址，留空则不设页面背景
+page_background_dark_url: 'https://roscid.top:414/2021/08/bg_dark_compressed.jpg' #夜间模式页面背景地址，留空则跟随日间模式
 page_background_opacity: 1 #页面背景不透明度，0 ~ 1的小数
 transparent_banner: true #Banner 透明化，如果设置了背景以后推荐开启该选项
 show_toolbar_mask: false #顶栏遮罩，如背景图片影响了顶栏文字显示对比度建议开启
@@ -83,7 +84,7 @@ zoomify_scale: 0.9 #图片放大后最大占页面大小的百分比, 0 ~ 1 的�
 
 #Lazyload
 enable_lazyload: true #是否启用 Lazyload
-lazyload_threshold: 800 #图片滚动到距离页面底部多少像素开始加载
+lazyload_threshold: 640 #图片滚动到距离页面底部多少像素开始加载
 lazyload_effect: fadeIn #图片显示动画
 lazyload_loading_style: 1 #图片加载的动画, 可选值 1 ~ 11, none
 
