@@ -14,8 +14,8 @@ toolbar_icon: '' #顶栏图标图片地址，留空则不显示
 toolbar_icon_link: '' #顶栏图标链接，点击时跳转
 toolbar_title: '酸酸のBlog' # 顶栏标题，留空则跟随博客标题
 toolbar_menu: #顶栏菜单，支持二级菜单
-  首页: /home
-  归档: /archives
+  Home: /home
+  Archives: /archives
 #  二级菜单:
 #    归档: /archives
 
@@ -33,13 +33,13 @@ sidebar_banner_title: '' #侧栏标题，留空则跟随博客标题
 sidebar_banner_subtitle: '' #侧栏子标题，留空则不显示，设为 --hitokoto-- 调用一言
 sidebar_announcement: '' #侧栏公告，留空则不显示
 leftbar_menu: #侧栏顶部菜单，支持无限层级菜单嵌套
-  首页: /
-  归档: /archives
-  二级菜单:
-    三级菜单:
-      首页: /
-sidebar_auther_image: '/assets/img/auther.jpg' #侧栏作者头像
-sidebar_auther_name: '' #侧栏作者名，留空则跟随博客名
+#  Home: /
+#  Archives: /archives
+#  二级菜单:
+#    三级菜单:
+#      首页: /
+sidebar_auther_image: 'https://roscid.top:414/2021/08/avatar1.png' #侧栏作者头像
+sidebar_auther_name: 'Suansuan' #侧栏作者名，留空则跟随博客名
 leftbar_author_links: #侧栏作者链接列表
 #  aaa: /
 #  bbb: /
@@ -53,12 +53,12 @@ show_headindex_number: false #侧栏文章目录是否显示章节编号
 #文章
 excerpt: true #是否显示文章摘要，为 false 则显示全文
 first_image_as_thumbnail: false #自动取文章第一张图为特色图片
-article_meta: time|categories|read|words|readingtime #文章 Meta 信息列表，用竖线分隔开，可选: time 发布时间, edittime 编辑时间, categories 分类, read 阅读量，words 字数, readingtime 预计阅读时间
+article_meta: time|categories|words|readingtime #文章 Meta 信息列表，用竖线分隔开，可选: time 发布时间, edittime 编辑时间, categories 分类, read 阅读量，words 字数, readingtime 预计阅读时间
 reading_speed_cn: 288 #每分钟中文阅读字数，用于计算预计阅读时间
 reading_speed_en: 144 #每分钟英文阅读单词数，用于计算预计阅读时间
 donate_qrcode_url: '' #赞赏二维码地址，留空则不显示
 additional_content_after_post: '' #文末追加信息，支持 HTML，留空则不显示
-article_header_style: default #文章内小标题样式，可选值: default, 1, 2
+article_header_style: 1 #文章内小标题样式，可选值: default, 1, 2
 
 
 #背景
@@ -66,7 +66,7 @@ page_background_url: 'https://roscid.top:414/2021/08/bg_light_compressed.jpg' #�
 page_background_dark_url: 'https://roscid.top:414/2021/08/bg_dark_compressed.jpg' #夜间模式页面背景地址，留空则跟随日间模式
 page_background_opacity: 1 #页面背景不透明度，0 ~ 1的小数
 transparent_banner: true #Banner 透明化，如果设置了背景以后推荐开启该选项
-show_toolbar_mask: false #顶栏遮罩，如背景图片影响了顶栏文字显示对比度建议开启
+show_toolbar_mask: true #顶栏遮罩，如背景图片影响了顶栏文字显示对比度建议开启
 
 #浮动操作按钮
 fab_show_darkmode_button: false #是否显示日夜间模式切换浮动操作按钮
@@ -74,11 +74,11 @@ fab_show_settings_button: true #是否显示博客设置浮动操作按钮
 fab_show_gotocomment_button: false #是否显示跳转到评论区浮动操作按钮
 
 #平滑滚动
-smoothscroll: 1 #可选值: disabled, 1, 1-pulse, 2, 3
+smoothscroll: 1-pulse #可选值: disabled, 1, 1-pulse, 2, 3
 
 #Zoomify
 enable_zoomify: true #是否启用 Zoomify 图片放大预览
-zoomify_duration: 200 #图片放大动画时长
+zoomify_duration: 414 #图片放大动画时长
 zoomify_easing: cubic-bezier(0.4,0,0,1) #图片放大动画曲线
 zoomify_scale: 0.9 #图片放大后最大占页面大小的百分比, 0 ~ 1 的小数
 
@@ -86,15 +86,15 @@ zoomify_scale: 0.9 #图片放大后最大占页面大小的百分比, 0 ~ 1 的�
 enable_lazyload: true #是否启用 Lazyload
 lazyload_threshold: 640 #图片滚动到距离页面底部多少像素开始加载
 lazyload_effect: fadeIn #图片显示动画
-lazyload_loading_style: 1 #图片加载的动画, 可选值 1 ~ 11, none
+lazyload_loading_style: 2 #图片加载的动画, 可选值 1 ~ 11, none
 
 #Pangu.js
 enable_pangu: false #是否启用 Pangu.js 自动用空格分隔文章中的中英文字符
 
 #其他
 pjax_disabled: false #是否禁用 Pjax
-enable_into_article_animation: false #是否启用进入文章动画
-enable_mobile_scale: false #是否允许手机端缩放页面
+enable_into_article_animation: true #是否启用进入文章动画
+enable_mobile_scale: true #是否允许手机端缩放页面
 
 #页脚
 footer_html: '' #页脚 HTML
