@@ -8,10 +8,6 @@ package-lock.json
 .env.local
 .env.*.local
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # Editor directories and files
 .idea
@@ -21,3 +17,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+Thumbs.db
+db.json
+*.log
+.deploy*/
